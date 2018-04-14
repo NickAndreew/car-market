@@ -206,7 +206,7 @@ hr {
 }
 
 .postImage {
-  width:250px;
+  width:230px;
   height: 200px;
 }
 
@@ -216,12 +216,38 @@ hr {
 }
 
 .postInfo {
-  display: block;
-  
+  display: block; 
   padding-left: 25px;
 }
 
 .carInfo {
   max-width: 600px !important;
   display: block;
+}
+
+.recentPosts {
+  display: inline-flex;
+  padding:10px;
+  margin-left:25px;
+  max-width:1040px;
+  justify-content: space-between;
+  overflow-x: scroll; 
+}
+
+.recentPost {
+  padding:10px;
+  min-width: 200px;
+  max-width: 250px;
+  margin-right:40px;
+}
+
+.imageRP {
+  display: block;
+  width: 230px;
+}
+
+.searchResultNumber{
+  width:100%;
+  margin-top:50px;
+  text-align: center;
 }

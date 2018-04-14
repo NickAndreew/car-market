@@ -102,49 +102,49 @@ class Search extends Component {
 						<hr />
 						<div className="postsList">
 							{	
-								PostsAPI.all.map(a => (
+								PostsAPI.all().map(a => (
 									<div className="post">
 										<div className="postHeader">
-											<h4 className="">Make Model title</h4>
+											<h4 className="">{a.vehicle.make} {a.vehicle.model} {a.title}</h4>
 										</div>
 										<div className="photoAndInfo">
 											<div>
 												<img src="https://t3.ftcdn.net/jpg/01/37/79/64/240_F_137796421_862uujp3w0F7tABl35HACgfSKmfLk6Yj.jpg" className="postImage" />
 											</div>
 											<div className="postInfo">
-												<h1>0 $</h1>
+												<h1>{a.price} $</h1>
 												<div className="container carInfo" >
 													<div className="row">
 														<div className="col-sm-3">
-															Milage
+															{a.mileage} miles
 														</div>
 														<div className="col-sm-3">
-															Year
+															{a.year}
 														</div>
 														<div className="col-sm-3">
-															Power
-														</div>
-													</div>
-													<div className="row">
-														<div className="col-sm-3">
-															Body Type
-														</div>
-														<div className="col-sm-3">
-															Number of owners
-														</div>
-														<div className="col-sm-3">
-															Gearing Type
+															{a.power}
 														</div>
 													</div>
 													<div className="row">
 														<div className="col-sm-3">
-															Fuel Type
+															{a.body_type}
 														</div>
 														<div className="col-sm-3">
-															Fuel Consumption
+															1
 														</div>
 														<div className="col-sm-3">
-															Transmission
+															{a.gearing_type}
+														</div>
+													</div>
+													<div className="row">
+														<div className="col-sm-3">
+															{a.fuel_type}
+														</div>
+														<div className="col-sm-3">
+															{a.fuel_consumption}
+														</div>
+														<div className="col-sm-3">
+															{a.transmission}
 														</div>
 													</div>
 												</div>
@@ -152,7 +152,7 @@ class Search extends Component {
 											
 										</div>
 										<div>
-											<h5>Country</h5>
+											<h5>{a.location}</h5>
 										</div>
 									</div>
 								))

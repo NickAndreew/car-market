@@ -89,11 +89,27 @@ class Home extends Component {
 							</div>
 						</form>
 					</div>
+					<div className="searchResultNumber">
+						<h1>10</h1>
+						<p>Results found</p>
+					</div>
 				</div>
 				<h3 className="titleCl">Recently Posted</h3>
 				<div className="searchFormHold">
 					<div className="recentPosts">
-
+						{
+							PostsAPI.all().map(a =>(
+								<div className="recentPost">
+									<div className="imageRP">
+										<img src="https://t3.ftcdn.net/jpg/01/37/79/64/240_F_137796421_862uujp3w0F7tABl35HACgfSKmfLk6Yj.jpg" className="postImage"/>
+									</div>
+									<div className="recentPostInfo">
+										<h5>{a.vehicle.make} {a.vehicle.model} {a.title}</h5>
+										<h5>{a.price} $</h5>
+									</div>
+								</div>		
+							))
+						}
 					</div>
 				</div>
 			</div>
