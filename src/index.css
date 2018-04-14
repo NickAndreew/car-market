@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color:darkgray;
+  background-color:#f5f5f5;
 }
 
 nav ul {
@@ -14,6 +14,7 @@ nav ul {
   margin-right: -1px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  box-shadow: 2px 3px #051b327d;
 }
 
 nav ul li {
@@ -41,9 +42,25 @@ p {
   margin-bottom: 15px;
 }
 
+hr {
+  margin-right:10px;
+}
+
+.navbar {
+  margin-bottom: 0 !important;
+}
+
 .icon {
   width: 50px;
   height: 50px;
+}
+
+.backButton {
+  margin-left:15px;
+}
+
+.select{
+  overflow:scroll;
 }
 
 .main {
@@ -52,6 +69,7 @@ p {
 
 .container {
   max-width: 1100px !important;
+  min-width: 770px !important;
 }
 
 .row {
@@ -61,14 +79,14 @@ p {
 .searchFormHold {
   display: flex;
   width:100%;
-  height: 350px;
   background-color: #10365d7d;
   border-radius: 10px;
+  box-shadow: 2px 3px #051b327d;
 }
 
 .form-control {
   padding: 5px;
-  margin-left: 15px;
+  margin-left: 14px;
   margin-top: 15px;
 }
 
@@ -80,16 +98,19 @@ p {
 .searchFiltersDiv {
   display: block;
   width: 50%;
+  padding-bottom: 0px;
 }
 
 .titleCl {
-  margin-left: 35px;
-
+  margin-left: 25px;
+  padding: 5px;
 }
 
 .container1 {
   width:100%;
   padding:15px;
+  min-width: 450px !important;
+  max-height: 432px !important;
 }
 
 .btn-warning {
@@ -108,4 +129,99 @@ p {
   width: 100%;
   text-align: start;
   color: white;
+}
+
+.recentPosts {
+  min-height: 300px;
+}
+
+.footer {
+  height: 70px;
+  margin-top:50px;
+  background-color: #10365d7d;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 2px 3px #051b327d;
+}
+
+.filter {
+  display: block;
+  height: fit-content;
+  width: 18%;
+  min-width: 200px;
+  margin-left: 0px;
+  margin-right: auto;
+  background-color: #10365d7d;
+  border-radius: 10px;
+  padding-right: 10px;
+}
+
+.posts {
+  display: block;
+  height: fit-content;
+  width: 80%;
+  margin-left: auto;
+  margin-right: 0px;
+  background-color: #10365d7d;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.container2 {
+  display: flex;
+  width:100%;
+  flex-direction: row;
+}
+
+.container3 {
+  width: 90%;
+  padding-bottom: 20px;
+}
+
+.filterText {
+  margin-left: 18px;
+  margin-top:10px;
+  margin-bottom: -10px;
+}
+
+.searchTitleAndSorting {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#sort {
+  width:30%;
+  margin-right: 0px;
+  margin-top:20px;
+}
+
+.postsHeadDiv {
+  width:100%;
+}
+
+.postsList {
+  width:100%;
+}
+
+.postImage {
+  width:250px;
+  height: 200px;
+}
+
+.photoAndInfo{
+  display: flex;
+  flex-direction: row;
+}
+
+.postInfo {
+  display: block;
+  
+  padding-left: 25px;
+}
+
+.carInfo {
+  max-width: 600px !important;
+  display: block;
 }

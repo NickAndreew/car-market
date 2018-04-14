@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {NavLink} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
+import PostsAPI from './PostsAPI';
 
 class Home extends Component {
 	render() {
 		return (
 			<div className='home'>
+				<h2 className="titleCl">Search</h2>
 				<div className="searchFormHold">
 					<div className="searchFiltersDiv">
-						<h2 className="titleCl">Search</h2>
 						<form>
 							<div className="container1">
 								<div className="row">
 									<div className="col-sm-6">
-										<select className="form-control" id="makeId">
+										<select className="form-control select" id="makeId">
 											<option selected>Make</option>
 											<option value='maker1'>Maker1</option>
 											<option value='maker2'>Maker2</option>
@@ -24,7 +25,7 @@ class Home extends Component {
 										</select>
 									</div>
 									<div className="col-sm-6">
-										<select className="form-control" id="modelId">
+										<select className="form-control select" id="modelId">
 											<option selected>Model</option>
 											<option value='model1'>Model1</option>
 											<option value='model2'>Model2</option>
@@ -36,7 +37,7 @@ class Home extends Component {
 								</div>
 								<div className="row">
 									<div className="col-sm-6">
-										<select className="form-control" id="makeId">
+										<select className="form-control select" id="makeId">
 											<option selected>First Registration</option>
 											<option value='maker1'>2000</option>
 											<option value='maker2'>2001</option>
@@ -46,7 +47,7 @@ class Home extends Component {
 										</select>
 									</div>
 									<div className="col-sm-6">
-										<select className="form-control" id="modelId">
+										<select className="form-control select" id="modelId">
 											<option selected>Price up to ($)</option>
 											<option value='model1'>500$</option>
 											<option value='model2'>1000$</option>
@@ -58,7 +59,7 @@ class Home extends Component {
 								</div>
 								<div className="row">
 									<div className="col-sm-6">
-										<select className="form-control" id="makeId">
+										<select className="form-control select" id="makeId">
 											<option selected>Country</option>
 											<option value='maker1'>Albania</option>
 											<option value='maker2'>Belgium</option>
@@ -75,22 +76,25 @@ class Home extends Component {
 									</div>
 								</div>
 								<div className="row">
-									
+
 								</div>
 								<div className="row">
 									<div className="col-sm-6">
 										<a href="" className="btn btn-link">Refine Search</a>
 									</div>
 									<div className="col-sm-6">
-										<button type="button" className="btn btn-warning">Search</button>
+										<Link to='/search'><button type="button" className="btn btn-warning">Search</button></Link>
 									</div>
 								</div>
 							</div>
 						</form>
 					</div>
 				</div>
-				<div>
+				<h3 className="titleCl">Recently Posted</h3>
+				<div className="searchFormHold">
+					<div className="recentPosts">
 
+					</div>
 				</div>
 			</div>
 		);
