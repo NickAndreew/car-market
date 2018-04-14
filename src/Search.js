@@ -119,7 +119,7 @@ class Search extends Component {
 															{a.mileage} miles
 														</div>
 														<div className="col-sm-3">
-															{a.year}
+															{a.vehicle.year}
 														</div>
 														<div className="col-sm-3">
 															{a.power}

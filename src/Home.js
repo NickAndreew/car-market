@@ -106,6 +106,7 @@ class Home extends Component {
 									<div className="recentPostInfo">
 										<h5>{a.vehicle.make} {a.vehicle.model} {a.title}</h5>
 										<h5>{a.price} $</h5>
+										<h5>{a.vehicle.year}</h5>
 									</div>
 								</div>		
 							))
