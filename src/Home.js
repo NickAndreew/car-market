@@ -76,11 +76,8 @@ class Home extends Component {
 									</div>
 								</div>
 								<div className="row">
-
-								</div>
-								<div className="row">
 									<div className="col-sm-6">
-										<a href="" className="btn btn-link">Refine Search</a>
+										<Link to='/refined-search'><a className="btn btn-link">Refine Search</a></Link>
 									</div>
 									<div className="col-sm-6">
 										<Link to='/search'><button type="button" className="btn btn-warning">Search</button></Link>

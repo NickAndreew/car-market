@@ -84,6 +84,14 @@ hr {
   box-shadow: 2px 3px #051b327d;
 }
 
+.mainDiv {
+  display: block;
+  width:100%;
+  background-color: #10365d7d;
+  border-radius: 10px;
+  box-shadow: 2px 3px #051b327d;
+}
+
 .form-control {
   padding: 5px;
   margin-left: 14px;
@@ -97,13 +105,28 @@ hr {
 
 .searchFiltersDiv {
   display: block;
-  width: 50%;
+  width: 70%;
   padding-bottom: 0px;
+}
+
+.refinedSearchFiltersDiv {
+  display: block;
+  width: 100%;
+  padding-bottom: 20px;
 }
 
 .titleCl {
   margin-left: 25px;
-  padding: 5px;
+  padding: 10px;
+}
+
+.text{
+  margin-left: 15px;
+}
+
+.termsDiv {
+  padding: 50px;
+  padding-top: 10px;
 }
 
 .container1 {
@@ -129,10 +152,6 @@ hr {
   width: 100%;
   text-align: start;
   color: white;
-}
-
-.recentPosts {
-  min-height: 300px;
 }
 
 .footer {
@@ -197,6 +216,12 @@ hr {
   margin-top:20px;
 }
 
+.title {
+  text-align: center;
+  width:100%;
+  padding-top: 40px;
+}
+
 .postsHeadDiv {
   width:100%;
 }
@@ -206,7 +231,7 @@ hr {
 }
 
 .postImage {
-  width:230px;
+  width:200px;
   height: 200px;
 }
 
@@ -229,25 +254,34 @@ hr {
   display: inline-flex;
   padding:10px;
   margin-left:25px;
-  max-width:1040px;
+  margin-right: 25px;
+  max-width:1047px;
   justify-content: space-between;
   overflow-x: scroll; 
 }
 
 .recentPost {
-  padding:10px;
+  padding-top:10px;
+  padding-right:10px;
+  padding-bottom:10px;
   min-width: 200px;
   max-width: 250px;
-  margin-right:40px;
+  margin-right:20px;
 }
 
 .imageRP {
   display: block;
-  width: 230px;
+  width: 200px;
 }
 
 .searchResultNumber{
-  width:100%;
+  width:30%;
   margin-top:50px;
   text-align: center;
+}
+
+.userInfo {
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
 }

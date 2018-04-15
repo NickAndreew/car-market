@@ -87,7 +87,7 @@ class Search extends Component {
 								<input placeholder="ZIP" className="form-control" />
 								<input placeholder="Radius" className="form-control" />
 
-								<a href="" className="btn btn-link">Refine Search</a>
+								<Link to='/refined-search'><a className="btn btn-link">Refine Search</a></Link>
 								<Link to='/search'><button type="button" className="btn btn-warning">Search</button></Link>
 							</div>
 						</form>
@@ -153,6 +153,7 @@ class Search extends Component {
 										</div>
 										<div>
 											<h5>{a.location}</h5>
+											<hr />
 										</div>
 									</div>
 								))
