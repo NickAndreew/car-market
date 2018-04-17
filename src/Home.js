@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {NavLink, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import PostsAPI from './PostsAPI';
 
 class Home extends Component {
@@ -96,9 +95,9 @@ class Home extends Component {
 					<div className="recentPosts">
 						{
 							PostsAPI.all().map(a =>(
-								<div className="recentPost">
+								<div className="recentPost" key={a.id}>
 									<div className="imageRP">
-										<img src="https://t3.ftcdn.net/jpg/01/37/79/64/240_F_137796421_862uujp3w0F7tABl35HACgfSKmfLk6Yj.jpg" className="postImage"/>
+										<img src="https://t3.ftcdn.net/jpg/01/37/79/64/240_F_137796421_862uujp3w0F7tABl35HACgfSKmfLk6Yj.jpg" alt="" className="postImage"/>
 									</div>
 									<div className="recentPostInfo">
 										<h5>{a.vehicle.make} {a.vehicle.model} {a.title}</h5>

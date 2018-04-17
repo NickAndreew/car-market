@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {NavLink, Link} from 'react-router-dom';
-import PostsAPI from './PostsAPI';
+import {Link} from 'react-router-dom';
 
 class RefinedSearch extends Component {
 	render() {
 		return (
 			<div className='refined-search'>
+				<Link to='/' className="backButton"><span className="glyphicon glyphicon-arrow-left"></span>  Home page</Link>
 				<h2 className="titleCl">Search Details</h2>
 				<div className="searchFormHold">
 					<div className="refinedSearchFiltersDiv">

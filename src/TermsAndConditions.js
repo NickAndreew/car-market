@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 class TermsAndConditions extends Component {
@@ -28,12 +28,22 @@ class TermsAndConditions extends Component {
                     <p>4.3. Advertisements will be available for viewing on the Database for a period of 8 weeks, unless deleted by the User him or herself. After a period of 8 weeks has elapsed, CarMarket may delete the advertisement.</p>
                     <p>4.4. The placing of advertisements shall be at CarMarket’s discretion. At all times CarMarket shall be entitled to limit the availability of advertisements on the Databank from the point of view of space or time, and with regard to the number of advertisements placed, as well as deleting advertisements from the Database or preventing advertisements from being passed on if such advertisements do not meet the Requirements on the Layout of Advertisements, they are in CarMarket’s opinion illegal, or a third party has objected toany such advertisement.</p>
                 </div>
-                <div className="container">
-                    <div className="col-sm-6">
+                <div>
+                    <div>    
+                        <div className="row">
+                            <div className="col-sm-3">
 
-                    </div>
-                    <div className="col-sm-6">
-                        
+                            </div>
+                            <div className="col-sm-3">
+                                <Link to='/sell-your-car/'><button className="btn">Decline</button></Link>                      
+                            </div>
+                            <div className="col-sm-3">
+                                <Link to='/sell-your-car/post-info'><button className="btn">Accept</button></Link>
+                            </div>
+                            <div className="col-sm-3">
+                                
+                            </div>    
+                        </div>
                     </div>
                 </div>
             </div>
