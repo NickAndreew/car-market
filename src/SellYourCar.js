@@ -11,7 +11,12 @@ class SellYourCar extends Component {
         this.state = {
             access:false
         }
-	}
+    }
+    
+    getData(val){
+        console.log(val);
+        this.setState({access:val});
+    }
 	
 	render() {
 		return (
@@ -20,7 +25,7 @@ class SellYourCar extends Component {
 				<h1 className="titleCl">Post your vehicle for sale</h1>
                 <Switch>
                     <Route exact path="/sell-your-car" component={SellerInfo}/>
-                    <ProtectedRoute isAccessible={this.state.access} redirectToPath="/sell-your-car/" path="/sell-your-car/terms-conditions" component={TermsAndConditions} />
+                    <Route path="/sell-your-car/terms-conditions" sendData={this.getData} component={TermsAndConditions} />
                     <ProtectedRoute isAccessible={this.state.access} redirectToPath="/sell-your-car/" path="/sell-your-car/post-info" component={PostInfo}/>
                 </Switch>
 			</div>
