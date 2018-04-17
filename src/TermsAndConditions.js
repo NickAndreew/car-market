@@ -8,15 +8,6 @@ class TermsAndConditions extends Component {
         this.state = {
 
         }
-        this.passAccess = this.passAccess.bind(this);
-    }
-
-    passAccess(){
-        this.props.sendData(true);
-    }
-
-    restrictAccess(){
-        this.props.sendData(false);
     }
 
 	render() {
@@ -51,10 +42,10 @@ class TermsAndConditions extends Component {
 
                             </div>
                             <div className="col-sm-3">
-                                <Link to='/sell-your-car/'><button className="btn">Decline</button></Link>                      
+                                <Link to='/sell-your-car/'><button className="btn" >Decline</button></Link>                      
                             </div>
                             <div className="col-sm-3">
-                                <Link to='/sell-your-car/post-info'><button className="btn" onClick={ this.passAccess }>Accept</button></Link>
+                                <Link to='/sell-your-car/post-info'><button className="btn" >Accept</button></Link>
                             </div>
                             <div className="col-sm-3">
                                 

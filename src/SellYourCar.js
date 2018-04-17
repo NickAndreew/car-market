@@ -9,13 +9,14 @@ class SellYourCar extends Component {
 	constructor (props){
         super(props);
         this.state = {
-            access:false
+            access:true
         }
+        this.updateAccess = this.updateAccess.bind(this);
     }
     
-    getData(val){
-        console.log(val);
-        this.setState({access:val});
+    updateAccess(){
+        console.log("get data works");
+        this.setState({access:!this.state.access});
     }
 	
 	render() {
@@ -25,7 +26,7 @@ class SellYourCar extends Component {
 				<h1 className="titleCl">Post your vehicle for sale</h1>
                 <Switch>
                     <Route exact path="/sell-your-car" component={SellerInfo}/>
-                    <Route path="/sell-your-car/terms-conditions" sendData={this.getData} component={TermsAndConditions} />
+                    <Route path="/sell-your-car/terms-conditions" component={TermsAndConditions} />
                     <ProtectedRoute isAccessible={this.state.access} redirectToPath="/sell-your-car/" path="/sell-your-car/post-info" component={PostInfo}/>
                 </Switch>
 			</div>
