@@ -4,6 +4,25 @@ import {Link} from 'react-router-dom';
 import PostsAPI from './PostsAPI';
 
 class SearchResults extends Component {
+	constructor(props){
+		super(props);
+		this.state = {
+
+		}
+	}
+	
+    componentDidMount(){
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			console.log("is mobile..");
+			document.getElementById("filter").style = "display: none";
+			document.getElementById("posts").style = "width: 100%";
+        } else {
+			console.log("pc");
+			document.getElementById("filter").style = "display: flex";
+			document.getElementById("posts").style = "width: 80%";
+        }
+	}
+	
 	render() {
 		return (
 			<div>
@@ -21,7 +40,7 @@ class SearchResults extends Component {
 					</select>
 				</div>
 				<div className="container2" id="searchContainer">
-					<div className="filter">
+					<div className="filter" id="filter">
 						<form>
 							<div className="container3">
 								<p className="filterText">Make</p>
@@ -91,7 +110,7 @@ class SearchResults extends Component {
 							</div>
 						</form>
 					</div>
-					<div className="posts">
+					<div className="posts" id="posts">
 						<div className="postsHeadDiv">
 							<h4>10 Vehicles found</h4>
 							<div>

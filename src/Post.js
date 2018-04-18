@@ -18,11 +18,15 @@ class Post extends Component {
         console.log(post);
     }
 
+    goBackFnct(){
+        window.history.back();
+    }
+
 
     render() {
 		return (
             <div>
-                <Link to='/search' className="backButton"><span className="glyphicon glyphicon-arrow-left"></span>  Search</Link>
+                <a to='/search' className="backButton" onClick={ this.goBackFnct }><span className="glyphicon glyphicon-arrow-left"></span>  Search</a>
                 <div className="searchFormHold">
                     <div className="postDiv">
                         <div className="postHeader">

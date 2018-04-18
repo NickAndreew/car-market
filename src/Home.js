@@ -85,10 +85,10 @@ class Home extends Component {
 							</div>
 						</form>
 					</div>
-					<div className="searchResultNumber">
+					{/* <div className="searchResultNumber">
 						<h1>10</h1>
 						<p>Results found</p>
-					</div>
+					</div> */}
 				</div>
 				<h3 className="titleCl">Recently Posted</h3>
 				<div className="searchFormHold">
